@@ -1,0 +1,91 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Care</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="loader">
+        <img src="flecha.png" alt="">
+            <path fill="#3498db" d="M12 2a1 1 0 110 2A8 8 0 104 12a1 1 0 11-2 0A10 10 0 1112 2z">
+                <animateTransform 
+                    attributeName="transform" 
+                    type="rotate" 
+                    from="0 12 12" 
+                    to="360 12 12" 
+                    dur="2s"  />
+            </path>
+        </svg>
+    </div>
+
+  <header class="header">
+    <div class="logo">Pet Care</div>
+    <nav class="nav">
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>PET CARE</h1>
+      <h2>Cuidamos a tus mascotas</h2>
+      <p>En Pet Care ofrecemos servicios veterinarios de alta calidad para mantener a tu mascota sana y feliz.</p>
+      <button>Conocer más</button>
+    </div>
+    <div class="hero-image">
+      <img src="animalito.png" alt="Imagen de mascotas">
+    </div>
+  </section>
+
+  
+  <section class="services">
+    <article class="service">
+      <div class="icon"></div>
+      <h2>Consultas Médicas</h2>
+      <p>Atención veterinaria personalizada para cada mascota.</p>
+      <button>Ver más</button>
+    </article>
+    <article class="service">
+      <div class="icon"></div>
+      <h2>Spa</h2>
+      <p>Servicio de baño y corte para mantenerlos impecables.</p>
+      <button>Ver más</button>
+    </article>
+    <article class="service">
+      <div class="icon"></div>
+      <h2>Emergencias</h2>
+      <p>Atención inmediata para situaciones críticas.</p>
+      <button>Ver más</button>
+    </article>
+  </section>
+
+
+  <footer class="footer">
+    <p>&copy; 2024 Pet Care Veterinaria y Spa. Todos los derechos reservados.</p>
+    <div class="social-icons">
+      <a href="#">Instagram</a>
+      <a href="#">Facebook</a>
+      <a href="#">WhatsApp</a>
+    </div>
+  </footer>
+
+  <script>window.onload = () => {
+    const loader = document.querySelector('.loader');
+    setTimeout(() => {
+        loader.classList.add('loader-hidden');
+    }, 3000);
+}
+;</script>
+  
+
+
+</body>
+</html>
+
